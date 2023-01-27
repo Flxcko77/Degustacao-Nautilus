@@ -20,6 +20,7 @@ header{
     background: rgb(254,190,1);
     background: linear-gradient(347deg, rgba(254,190,1,1) 30%, rgba(249,18,18,1) 98%, rgba(255,144,32,1) 100%);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    opacity: 87%;
 }
 .container-header{
     height: 20vh;
@@ -92,4 +93,72 @@ ion-icon{
     margin-left: 2em;
 }
 
+main{
+    width: 100%;
+    height: 80vh;
+    background-color: #282828;;
+}
+
+.container-main #lista-mesas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.container-main .cards-mesas{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(4.4px);
+    width: 125px;
+    height: 220px;
+    border-radius: 5px;
+    margin-right: 1em;
+    list-style: none;
+    text-align: center;
+    color: white;
+}
+
+.container-main li .input-mesa {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 80px;
+    text-align: center;
+    border: 2px solid rgb(254,190,1);
+    background: none;
+    color: white;
+}
+
+.container-main li .num-mesa{
+    position: absolute;
+    margin-top: -29px;
+}
+
+.container-main li .input-pessoas {
+    width: 2.5em;
+    height: 1.5em;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid rgb(254,190,1);
+    background: none;
+    color: white;
+
+}
+
+.container-main li h3 input{
+    height: 1.5em;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid rgb(254,190,1);
+    background: none;
+    color: white;
+}
+
+.lista-salgados{
+    list-style: none;
+    width: 100%;
+    text-align: left;
+}
 
