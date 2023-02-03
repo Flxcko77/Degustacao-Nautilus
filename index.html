@@ -28,21 +28,34 @@
     <main>
         <div class="container-main">
             <ul id="lista-mesas">
-                <li class="cards-mesas">
+                <li class="cards-mesas ">
                     <h2 class="num-mesa">MESA:<input type="number" class="input-mesa"></h2>
                     <h2 class="num-pessoas">PESSOAS:<input class="input-pessoas" type="number"></h2>
                     <h3 class="horario-chegada">HORARIO:<input type="time"></h3>
-                    <ul class="lista-salgados">
-                        <li class="salgados"><input type="checkbox">item 1</li>
-                        <li class="salgados"><input type="checkbox">item 2</li>
-                        <li class="salgados"><input type="checkbox">item 3</li>
-                        <li class="salgados"><input type="checkbox">item 4</li>
-                        <li class="salgados"><input type="checkbox">item 5</li>
-                        <li class="salgados"><input type="checkbox">item 6</li>
-                        <li class="salgados"><input type="checkbox">item 7</li>
-                        <li class="salgados"><input type="checkbox">item 8</li>
-                        <li class="salgados"><input type="checkbox">item 9</li>
-                        <li class="salgados"><input type="checkbox">item 10</li>
+                    <ul class="lista-salgados ">
+                        <div class="container-list " onclick="expandir()">
+                            <li class="salgados"><input type="checkbox">Boursin de Salaminho</li>
+                            <li class="salgados"><input type="checkbox">FoisGras com Geleia</li>
+                            <li class="salgados"><input type="checkbox">Dadinho de tapioca</li>
+                            <li class="salgados"><input type="checkbox">Ceviche de Salmão</li>
+                            <li class="salgados"><input type="checkbox">Arancine</li>
+                            <li class="salgados"><input type="checkbox">Barca aipo, Cream e Camarão</li>
+                            <li class="salgados"><input type="checkbox">Tartelete de maçã verde</li>
+                            <li class="salgados"><input type="checkbox">Consumé</li>
+                            <li class="salgados"><input type="checkbox">Filet Mignon á Piamontese</li>
+                            <li class="salgados"><input type="checkbox">Segunda Mini Degustação</li>
+                        </div>
+                            <div class="div-escondida ">
+                                <li class="salgados"><input type="checkbox">Vou-au-vent cebola e parmesão</li>
+                                <li class="salgados"><input type="checkbox">Pastel de Forno Lombo</li>
+                                <li class="salgados"><input type="checkbox">Coxinha</li>
+                                <li class="salgados"><input type="checkbox">Bolinho de Bacalhau</li>
+                                <li class="salgados"><input type="checkbox">Camarão empanado</li>
+                                <li class="salgados"><input type="checkbox">Kibe com Requeijão</li>
+                                <li class="salgados"><input type="checkbox">Bolinha de queijo</li>
+                                <li class="salgados"><input type="checkbox">Churros doce de leite</li>
+                                <li class="salgados"><input type="checkbox">Sobremesa</li>
+                            </div>
                     </ul>
                 </li>
                 <li class="cards-mesas">
@@ -54,4 +67,5 @@
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
 </html>
