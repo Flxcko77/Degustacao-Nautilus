@@ -127,6 +127,16 @@ main{
     color: white;
 }
 
+.container-main .cards-mesas button{
+    margin-left: 1.6em;
+    border-radius: 5px;
+    margin-top: 1em;
+    padding: 0.2em;
+    background: none;
+    color: white;
+    border: 1px solid rgb(254,190,1);
+}
+
 .container-main li .input-mesa {
     width: 2.5em;
     height: 2.5em;
