@@ -28,12 +28,12 @@
     <main>
         <div class="container-main">
             <ul id="lista-mesas">
-                <li class="cards-mesas ">
+                <li class="cards-mesas " id="cards-mesas" onclick="expandir()">
                     <h2 class="num-mesa">MESA:<input type="number" class="input-mesa"></h2>
                     <h2 class="num-pessoas">PESSOAS:<input class="input-pessoas" type="number"></h2>
                     <h3 class="horario-chegada">HORARIO:<input type="time"></h3>
-                    <ul class="lista-salgados ">
-                        <div class="container-list " onclick="expandir()">
+                    <ul class="lista-salgados " id="lista-salgados">
+                        <div class="container-list " id="container-list">
                             <li class="salgados"><input type="checkbox">Boursin de Salaminho</li>
                             <li class="salgados"><input type="checkbox">FoisGras com Geleia</li>
                             <li class="salgados"><input type="checkbox">Dadinho de tapioca</li>
@@ -44,9 +44,9 @@
                             <li class="salgados"><input type="checkbox">Consumé</li>
                             <li class="salgados"><input type="checkbox">Filet Mignon á Piamontese</li>
                             <li class="salgados"><input type="checkbox">Segunda Mini Degustação</li>
-                            <button type="submit" onclick="expandir()">Mostrar mais</button>
+                            <button type="submit" onclick="expandir()" id="Mostrar" class="Mostrar on">Mostrar mais</button>
                         </div>
-                            <div class="div-escondida ">
+                            <div class="div-escondida " id="div-escondida">
                                 <li class="salgados"><input type="checkbox">Vou-au-vent cebola e parmesão</li>
                                 <li class="salgados"><input type="checkbox">Pastel de Forno Lombo</li>
                                 <li class="salgados"><input type="checkbox">Coxinha</li>
