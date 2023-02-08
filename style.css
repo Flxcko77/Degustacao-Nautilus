@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ---> estrategia para responsividade <--- */
 html{
     font-size: 62.5%;
 }
+/* --> configurando layout <-- */
 body{
     height: 100vh;
     width: 100%;
@@ -98,7 +101,7 @@ ion-icon{
     background-color: white;
 }
 
-
+/* --> stylezando conteudo princial <--- */
 main{
     width: 100%;
     height: 190vh;
@@ -125,9 +128,10 @@ main{
     list-style: none;
     text-align: center;
     color: white;
+    transition-duration: 1s;
 }
 
-.container-main .cards-mesas button{
+.container-main .cards-mesas .Mostrar{
     margin-left: 1.6em;
     border-radius: 5px;
     margin-top: 1em;
@@ -135,10 +139,10 @@ main{
     background: none;
     color: white;
     border: 1px solid rgb(254,190,1);
-    transition: 0.5s;
+    transition-duration: 1s;
 }
 
-.container-main .cards-mesas button:focus{
+.container-main .cards-mesas .Mostrar:focus{
     scale: 1.2;
     background: rgb(254,190,1);
 }
@@ -189,6 +193,7 @@ main{
     width: 100%;
     height: 75%;
     position: absolute;
+    transition-duration: 5ms;
 }
 
 .div-escondida{
@@ -196,17 +201,17 @@ main{
     height: 100%;
     opacity: 0;
     display: none;
-    transition-duration: 5ms;
+    transition-duration: 2s;
 }
 
-/* full screen */
+/* ---> full screen <--- */
 
 .cards-mesas.on{
     position: absolute;
     top:50px;
-    left: 0;
+    left: 5px;
     background:  rgba(255, 255, 255, 0.2);
-    width: 100vw;
+    width: 98vw;
     height: 90vh;
     z-index: 10;
 }
@@ -240,7 +245,7 @@ main{
 
 .container-list.on{
     width: 100%;
-    height: 50%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -260,7 +265,6 @@ main{
     flex-direction: column;
     align-items: center;
     font-size: 2em;
-    background: none;
 }
 
 .div-escondida.on input{
@@ -268,3 +272,12 @@ main{
     padding: 5em;
 }
 
+.container-main .cards-mesas .Mostrar.on{
+    scale: 1.2;
+    width: 10em;
+    background: rgb(254,190,1);
+    color: #282828;
+    position: absolute;
+    margin-top: 115%;
+   
+}
